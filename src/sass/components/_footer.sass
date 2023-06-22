@@ -1,4 +1,13 @@
 .footer
     flex: 0 0 auto
+    color: $grey
+    &__note
+        font-weight: 600
+        @include baseFontSize
+    &__text
+        margin-top: 1.5rem
+        @include smallFontSize
+    &__link
+        @include underline($grey)
 
-@import '../media/_footer-media'
+        @import '../media/_footer-media'

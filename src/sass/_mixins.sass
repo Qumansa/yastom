@@ -6,6 +6,16 @@
         &:active
             opacity: 0.5
 
+@mixin underline($color)
+    background: linear-gradient(to left, $color, $color 100%)
+    background-position: 0 90%
+    background-size: 100% 0.1rem
+    background-repeat: repeat-x
+
+@mixin smallFontSize
+    font-size: 1.2rem
+    line-height: 140%
+
 @mixin baseFontSize
     font-size: 1.4rem
     line-height: 140%

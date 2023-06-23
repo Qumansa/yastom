@@ -7,7 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/bundle.js":
@@ -16,7 +15,7 @@
   \**************************/
 /***/ (() => {
 
-eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  console.log('Hello world!');\n});\n\n//# sourceURL=webpack:///./src/js/bundle.js?");
+eval("// 'use strict';\n\n// document.addEventListener('DOMContentLoaded', () => {\n// \tconsole.log('Hello world!');\n// });\n\n//# sourceURL=webpack:///./src/js/bundle.js?");
 
 /***/ })
 

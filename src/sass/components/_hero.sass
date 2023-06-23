@@ -1,0 +1,24 @@
+.hero
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: baseline
+        justify-content: center
+        padding-left: 8.5rem
+        min-height: 40rem
+        background: url('../img/hero.webp') center/cover no-repeat
+    &__title
+        font-size: 4.8rem
+        font-weight: 600
+    &__text
+        margin-top: 1rem
+        font-size: 1.8rem
+    &__button
+        margin-top: 2.5rem
+        padding: 1.6rem 2.4rem 1.6rem 4.8rem
+        font-weight: 600
+        color: $white
+        border-radius: 1.6rem
+        background: url('../img/phone.svg') 1.5rem center/2.4rem 2.4rem no-repeat
+        background-color: $cyan
+        @include baseFontSize

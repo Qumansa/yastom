@@ -1,0 +1,37 @@
+.prices
+    &__list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        margin-top: 3.2rem
+        gap: 3.2rem
+    &__item
+        display: flex
+        flex-direction: column
+        padding: 3.2rem
+        min-height: 24rem
+        background-color: #d4f0ef
+        border-radius: 1.6rem
+        &_installment
+            background: url('../img/percent.webp') #09ccc3 right bottom/15.8rem 17rem no-repeat
+        &-title
+            font-size: 2rem
+            font-weight: 600
+            &_installment
+                font-size: 2.4rem
+                color: $white
+        &-text
+            margin-top: 0.5rem
+            @include baseFontSize
+            &_installment
+                margin-top: 0
+                font-size: 8rem
+                font-weight: 700
+                color: $white
+        &-old-price
+            margin-top: auto
+            font-size: 1.6rem
+            opacity: 0.5
+        &-new-price
+            margin-top: 0.2rem
+            font-size: 2.4rem
+            font-weight: 700

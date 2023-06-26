@@ -1,5 +1,6 @@
-// 'use strict';
+'use strict';
+import initMap from './modules/initMap';
 
-// document.addEventListener('DOMContentLoaded', () => {
-// 	console.log('Hello world!');
-// });
+document.addEventListener('DOMContentLoaded', () => {
+	initMap();
+});

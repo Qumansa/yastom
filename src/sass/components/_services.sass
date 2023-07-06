@@ -1,0 +1,73 @@
+.services
+    .tabheader
+        display: inline-flex
+        flex-wrap: wrap
+        column-gap: 0.4rem
+        row-gap: 1.6rem
+        margin-top: 3.2rem
+        &__item
+            &_hidden
+                display: none
+            &_active
+                .tabheader__button
+                    color: $white
+                    background-color: $cyan
+                    border: 0.1rem solid $cyan
+        &__button
+            padding: 1.6rem 2.3rem
+            font-size: 1.4rem
+            font-weight: 500
+            border: 0.1rem solid #eaeaea
+            border-radius: 2.4rem
+            &:hover
+                color: $white
+                background-color: $cyan
+                border: 0.1rem solid $cyan
+                transition: 0.1s
+    .tabcontent
+        margin-top: 2.7rem
+        &__item
+            display: none
+            &_active
+                display: list-item
+            .table
+                width: 100%
+                border-spacing: 0 0.8rem
+                &__head
+                    padding: 0.4rem
+                    font-size: 1.4rem
+                    font-weight: 500
+                    color: $grey
+                    &_first
+                        padding-left: 2.4rem
+                    &_last
+                        padding-right: 2.4rem
+                        text-align: right
+                &__body
+                    margin-top: 0.8rem
+                    .table
+                        &__row
+                            border-radius: 1.2rem
+                            @include baseBoxShadow
+                            &_hidden
+                                display: none
+                &__data
+                    padding: 2rem 2.4rem
+                    font-size: 1.6rem
+                    font-weight: 500
+                    &_first
+                        max-width: 37rem
+                        color: $cyan
+                    &_last
+                        font-weight: 700
+                        color: $black
+                        text-align: right
+            .show-more
+                display: block
+                margin: 2.7rem auto 0 auto
+                padding: 1.2rem 12.6rem
+                font-size: 1.4rem
+                font-weight: 500
+                color: $cyan
+                border: 0.1rem solid $cyan
+                border-radius: 1.6rem

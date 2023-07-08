@@ -1,0 +1,36 @@
+@media (max-width: 767px)
+    .services
+        .tabheader
+            flex-wrap: nowrap
+            overflow-x: auto
+            max-width: 100%
+            &::-webkit-scrollbar
+                display: none
+            &__button
+                white-space: nowrap
+
+@media (max-width: 575px)
+    .services
+        .tabheader
+            margin-top: 2.4rem
+            &__button
+                padding: 0.9rem 1.5rem
+        .tabcontent
+            margin-top: 2.4rem
+            &__item
+                .table
+                    &__head
+                        font-size: 1.1rem
+                        font-weight: 600
+                        &_first
+                            padding-left: 1.6rem
+                        &_last
+                            padding-right: 1.6rem
+                    &__data
+                        padding: 1.6rem
+                        font-size: 1.4rem
+                        &_last
+                            vertical-align: top
+                .show-more
+                    margin-top: 1.5rem
+                    width: 100%

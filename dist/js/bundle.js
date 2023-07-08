@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_initMap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/initMap */ \"./src/js/modules/initMap.js\");\n/* harmony import */ var _modules_showMoreServices__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/showMoreServices */ \"./src/js/modules/showMoreServices.js\");\n/* harmony import */ var _modules_showMoreTabheaders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/showMoreTabheaders */ \"./src/js/modules/showMoreTabheaders.js\");\n/* harmony import */ var _modules_toggleServicesTabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/toggleServicesTabs */ \"./src/js/modules/toggleServicesTabs.js\");\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  // initMap();\n  // toggleServicesTabs();\n  // showMoreTabheaders();\n  // showMoreServices();\n});\n\n//# sourceURL=webpack:///./src/js/bundle.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_initMap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/initMap */ \"./src/js/modules/initMap.js\");\n/* harmony import */ var _modules_makeDraggable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/makeDraggable */ \"./src/js/modules/makeDraggable.js\");\n/* harmony import */ var _modules_showMoreServices__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/showMoreServices */ \"./src/js/modules/showMoreServices.js\");\n/* harmony import */ var _modules_showMoreTabheaders__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/showMoreTabheaders */ \"./src/js/modules/showMoreTabheaders.js\");\n/* harmony import */ var _modules_toggleServicesTabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/toggleServicesTabs */ \"./src/js/modules/toggleServicesTabs.js\");\n\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  // initMap();\n  (0,_modules_toggleServicesTabs__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n  (0,_modules_showMoreTabheaders__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_modules_showMoreServices__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_modules_makeDraggable__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('.services .tabheader');\n});\n\n//# sourceURL=webpack:///./src/js/bundle.js?");
 
 /***/ }),
 
@@ -28,6 +28,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction initMap() {\n  function init() {\n    var map = new ymaps.Map(\"contacts__map\", {\n      center: [55.643058, 37.385107],\n      zoom: 16\n    });\n    var placeMark = new ymaps.Placemark([55.643058, 37.391107], {}, {\n      iconLayout: 'default#image',\n      iconImageHref: '../img/map-icon.svg',\n      iconImageSize: [64, 75]\n    });\n    map.geoObjects.add(placeMark);\n  }\n  ymaps.ready(init);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initMap);\n\n//# sourceURL=webpack:///./src/js/modules/initMap.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/makeDraggable.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/makeDraggable.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction makeDraggable(elementSelector) {\n  var element = document.querySelector(elementSelector);\n  var isScrolling = false;\n  var clientX = 0;\n  var scrollLeft = element.scrollLeft;\n  element.addEventListener('touchstart', function (e) {\n    if (e.target) {\n      isScrolling = true;\n      clientX = e.clientX;\n    }\n  }, {\n    passive: true\n  });\n  element.addEventListener('touchend', function (e) {\n    if (e.target) {\n      isScrolling = false;\n    }\n  });\n  element.addEventListener('touchmove', function (e) {\n    if (e.target && isScrolling) {\n      scrollLeft = scrollLeft + e.clientX - clientX;\n      clientX = e.clientX;\n    }\n  }, {\n    passive: true\n  });\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (makeDraggable);\n\n//# sourceURL=webpack:///./src/js/modules/makeDraggable.js?");
 
 /***/ }),
 

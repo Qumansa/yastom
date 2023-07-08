@@ -1,0 +1,55 @@
+@media (max-width: 1199px)
+    .doctor
+        &__img
+            margin-left: 0
+            max-width: 45rem
+
+@media (max-width: 991px)
+    .doctor
+        &__container
+            padding-left: 2.4rem
+            background-position: center right
+        &__post
+            font-size: 1.6rem
+        &__name
+            font-size: 3.2rem
+        &__img
+            max-width: 42.5rem
+
+@media (max-width: 767px)
+    .doctor
+        &__container
+            min-height: 25rem
+        &__name
+            font-size: 2.6rem
+        &__img
+            max-width: 28rem
+
+@media (max-width: 575px)
+    .doctor
+        &__container
+            position: relative
+            overflow: hidden
+            align-items: start
+            padding: 2.4rem 0 0 2.4rem
+            min-height: 25rem
+            background: $white url('../img/doctor-bg-mobile.webp') center right/32rem no-repeat
+        &__post
+            font-size: 1.4rem
+        &__name
+            font-size: 2rem
+        &__img
+            position: absolute
+            right: -3rem
+            bottom: 0
+            max-width: 21.1rem
+            min-height: 24.2rem
+            max-height: 24.2rem
+            border-radius: 0 0 1.6rem 0
+
+@media (max-width: 355px)
+    .doctor
+        &__img
+            max-width: 20rem
+            min-height: 21.2rem
+            max-height: 21.2rem

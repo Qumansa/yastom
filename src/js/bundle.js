@@ -6,7 +6,7 @@ import showMoreTabheaders from './modules/showMoreTabheaders';
 import toggleServicesTabs from './modules/toggleServicesTabs';
 
 document.addEventListener('DOMContentLoaded', () => {
-	// initMap();
+	initMap();
 	toggleServicesTabs();
 	showMoreTabheaders();
 	showMoreServices();

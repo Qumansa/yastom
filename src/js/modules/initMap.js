@@ -1,7 +1,13 @@
 function initMap() {
     function init() {
+        let centerOfMap;
+
+        document.documentElement.clientWidth >= 768
+            ? centerOfMap = [55.643058, 37.385107]
+            : centerOfMap = [55.642058, 37.391107];
+
         const map = new ymaps.Map("contacts__map", {
-            center: [55.643058, 37.385107],
+            center: centerOfMap,
             zoom: 16
         });
 

@@ -1,0 +1,56 @@
+@media (max-width: 991px)
+    .contacts
+        &__info
+            padding: 1.6rem
+        &__address
+            font-size: 1.9rem
+
+@media (max-width: 767px)
+    .contacts
+        &__info
+            top: unset
+            bottom: 7rem
+            left: 50%
+            transform: translate(-50%, 0)
+            padding: 0
+            width: calc(100% - 4rem)
+            background-color: unset
+            border-radius: 0
+            &-flex
+                display: flex
+                justify-content: space-between
+                align-items: center
+                gap: 1.6rem
+                padding: 1.6rem
+                background-color: $white
+                border-radius: 1.6rem
+        &__address
+            font-size: 1.4rem
+        &__button
+            &_appointment
+                margin-top: 0
+                padding: 1.2rem 1.6rem
+                max-width: 11.3rem
+                width: 100%
+            &_callback
+                margin-top: 0.8rem
+                background-position-x: 36%
+
+@media (max-width: 575px)
+    .contacts
+        &__button
+            &_callback
+                background-position-x: 29%
+
+@media (max-width: 375px)
+    .contacts
+        &__info
+            &-flex
+                flex-direction: column
+        &__address
+            text-align: center
+        &__button
+            &_appointment
+                max-width: 100%
+            &_callback
+                background-position-x: 20%

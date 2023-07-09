@@ -1,0 +1,48 @@
+@media (max-width: 1919px)
+    //
+
+@media (max-width: 1599px)
+    //
+
+@media (max-width: 1439px)
+    //
+
+@media (max-width: 1199px)
+    //
+
+@media (max-width: 991px)
+    .prices
+        &__list
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            margin-top: 2.4rem
+            gap: 1.6rem
+        &__item
+            padding: 2.4rem
+            min-height: 20rem
+            &_installment
+                background-size: 11rem 12.5rem
+            &-title
+                font-size: 1.8rem
+                &_installment
+                    font-size: 2rem
+            &-new-price
+                font-size: 2rem
+            &-text
+                margin-top: 0.5rem
+                font-size: 1.3rem
+                &_installment
+                    margin-top: 0
+                    font-size: 6.4rem
+
+@media (max-width: 767px)
+    .prices
+        &__list
+            grid-template-columns: 1fr
+        &__item
+            &_installment
+                background-image: url('../img/percent-mobile.webp')
+                background-size: 16.4rem 15.4rem
+
+@media (max-width: 575px)
+    //

@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: http://f0840211.xsph.ru/sitemap.xml
